@@ -1,0 +1,60 @@
+/* Modern Notes - Custom Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+    min-height: 100vh;
+}
+.navbar {
+    background: linear-gradient(90deg, #7f53ac 0%, #657ced 100%) !important;
+    box-shadow: 0 2px 8px rgba(127,83,172,0.08);
+}
+.navbar-brand, .navbar-nav .nav-link, .navbar .d-flex {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.navbar .btn {
+    border-radius: 20px;
+    font-weight: 600;
+}
+.note-card {
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(101,124,237,0.10);
+    transition: transform 0.15s, box-shadow 0.15s;
+    background: linear-gradient(135deg, #fff 60%, #e0e7ff 100%);
+}
+.note-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(127,83,172,0.18);
+}
+.note-title {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #7f53ac;
+    font-weight: 700;
+}
+.note-icon {
+    font-size: 2rem;
+    color: #657ced;
+    margin-right: 10px;
+}
+.btn-primary, .btn-outline-success {
+    background: linear-gradient(90deg, #657ced 0%, #7f53ac 100%);
+    border: none;
+}
+.btn-primary:hover, .btn-outline-success:hover {
+    background: linear-gradient(90deg, #7f53ac 0%, #657ced 100%);
+}
+.alert-success, .alert-danger {
+    border-radius: 12px;
+    font-size: 1rem;
+}
+.form-label {
+    color: #7f53ac;
+    font-weight: 600;
+}
+.dataTables_wrapper .dataTables_filter input {
+    border-radius: 20px;
+    border: 1px solid #657ced;
+}
