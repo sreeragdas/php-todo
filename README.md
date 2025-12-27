@@ -15,7 +15,25 @@ Modern Notes is a simple PHP web application for managing your notes with user a
 
 ## Setup
 1. Clone the repository and enter the folder.
-2. Configure your database in `config.php` (choose MySQL or PostgreSQL and set credentials).
+2. Copy `.env.example` to `.env` and fill in your database credentials (see below). The app will load DB settings from `.env`.
+## .env Example
+
+Create a `.env` file in your project root (or copy from `.env.example`) and fill in your database details:
+
+```env
+DB_TYPE=mysql
+MYSQL_SERVER=localhost
+MYSQL_USERNAME=your_mysql_user
+MYSQL_PASSWORD=your_mysql_password
+MYSQL_DATABASE=notebook
+PGSQL_HOST=localhost
+PGSQL_PORT=5432
+PGSQL_USERNAME=your_pgsql_user
+PGSQL_PASSWORD=your_pgsql_password
+PGSQL_DATABASE=notebook
+```
+
+**Note:** Never commit your real `.env` file to version control. Use `.env.example` for sharing config structure.
 3. Start the PHP built-in server:
    ```sh
    php -S localhost:8000
